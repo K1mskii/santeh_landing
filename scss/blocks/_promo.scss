@@ -1,0 +1,121 @@
+.promo {
+    position: relative;
+    background: url(../img/promo.jpg) no-repeat;
+    background-size: cover;
+}
+.promo__wrapper {
+    padding-top: 136px;
+    padding-bottom: 172px;
+}
+.promo__text {
+    max-width: 625px;
+    margin: 0;
+}
+.promo__title {
+    @include bold;
+    color: $dark;
+    font-size: 40px;
+    line-height: 137%;
+}
+.promo__title-bg {
+    color: $ocean;
+}
+.promo__desc {
+    margin-top: 17px;
+    @include regular;
+    font-size: 18px;
+    line-height: 27px;
+    color: $dark;
+}
+.promo__list {
+    margin-top: 52px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.promo__item {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+.promo__item:not(:last-child) {
+    margin-right: 55px;
+}
+.promo__figure {
+    position: relative;
+}
+.promo__figure-icon {
+    margin-right: 10px;
+    position: relative;
+    display: block;
+    overflow: hidden;
+
+}
+.promo__figure::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 10px;
+    width: 39px;
+    height: 43px;
+    background: $ocean;
+    transform: skew(-25deg);
+}
+
+.promo__name {
+    max-width: 165px;
+    margin: 0 auto;
+    font-size: 15px;
+    line-height: 110%;
+    color: $dark;
+}
+.promo__btn {
+    margin-top: 122px;
+    padding: 21px 0;
+    width: 261px;
+    background: $ocean;
+    font-size: 18px;
+    line-height: 27px;
+    color: $white;
+}
+
+
+
+@media screen and (max-width: 1100px) {
+    .promo__btn {
+        margin-top: 60px;
+        padding: 12px 30px;
+        font-size: 15px;
+        line-height: 25px;
+    }
+}
+@media screen and (max-width: 980px) {
+    .promo__wrapper {
+        padding: 100px 0;
+    }
+    .promo__title {
+        font-size: 25px;
+    }
+    .promo__desc {
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 912px) {
+    .promo__wrapper {
+        padding-bottom: 150px;
+    }
+}
+@media screen and (max-width: 620px) {
+    .promo__list, .promo__btn {
+        margin-top: 20px;
+    }
+    .promo__btn {
+        padding: 12px 0;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .promo__btn {
+        width: 100%;
+    }
+}

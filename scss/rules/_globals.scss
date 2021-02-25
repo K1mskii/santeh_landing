@@ -1,0 +1,33 @@
+svg path {
+    fill:inherit;
+    stroke:inherit;
+    stroke-width:inherit;
+}
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 150px;
+}
+@media screen and (max-width: 1300px) {
+    .container {
+        max-width: 1300px;
+        margin: 0 auto;
+        padding: 0 100px;
+    }
+}
+@media screen and (max-width: 1220px) {
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 50px;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .container {
+        max-width: 440px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+}
+
