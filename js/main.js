@@ -9,7 +9,10 @@ $(function () {
 	$("#slider").slick({
 	  infinite: true,
 	  slidesToShow: 3,
+	  cssEase: 'linear',
+	  autoplaySpeed: 3000,
 	  slidesToScroll: 1,
+	  autoplay: true,
 	  loop: true,
 	  prevArrow: $(".prev-arrow"),
 	  nextArrow: $(".next-arrow"),
@@ -34,12 +37,16 @@ $(function () {
 	  ],
 	});
 });
+
 $(function () {
 	$(".benefits__slider").slick({
 	  infinite: true,
 	  slidesToShow: 2,
 	  slidesToScroll: 2,
+	  autoplaySpeed: 3000,
+	  cssEase: 'linear',
 	  loop: true,
+	  autoplay: true,
 	  dots: true,
 	  arrows: false,
 	  responsive: [{
@@ -90,3 +97,26 @@ parentContainer.addEventListener('click', event=>{
 	currentText.classList.toggle('price__hide--show');
 	current.textContent = current.textContent.includes('Развернуть') ? "Свернуть" : "Развернуть";
 })
+
+$(function () {
+	var width = $(window).width();
+	$(window).resize(function(){
+	if(width < 767) {
+		$(".price__list").slick({
+			responsive: [
+				{
+					breakpoint: 2048,
+					settings: "unslick"
+				},
+				{
+				   breakpoint: 767,
+				   settings: {
+					  slidesToShow: 1,
+					  slidesToScroll: 1
+					}
+				},
+			]
+		});
+	}}
+	);
+});

@@ -89,6 +89,9 @@
     width: 50%;
     height: 100%;
 }
+.price__list .slick-slide {
+    width: 360px;
+}
 [dir='rtl'] .slick-slide
 {
     float: right;
