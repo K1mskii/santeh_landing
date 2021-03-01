@@ -101,7 +101,7 @@ parentContainer.addEventListener('click', event=>{
 $(function () {
 	var width = $(window).width();
 	$(window).resize(function(){
-	if(width < 767) {
+	if(width < 1000) {
 		$(".price__list").slick({
 			responsive: [
 				{
@@ -109,9 +109,9 @@ $(function () {
 					settings: "unslick"
 				},
 				{
-				   breakpoint: 767,
+				   breakpoint: 1000,
 				   settings: {
-					  slidesToShow: 1,
+					  slidesToShow: 3,
 					  slidesToScroll: 1
 					}
 				},
@@ -119,4 +119,19 @@ $(function () {
 		});
 	}}
 	);
+});
+
+$(function () {
+	$("#portfolio").slick({
+	  infinite: true,
+	  slidesToShow: 1,
+	  slidesToScroll: 1,
+	  cssEase: 'linear',
+	  autoplaySpeed: 3000,
+	  autoplay: true,
+	  loop: true,
+	  dots: true,
+	  prevArrow: $(".portfolio__arrows .prev-arrow"),
+	  nextArrow: $(".portfolio__arrows .next-arrow"),
+	});
 });

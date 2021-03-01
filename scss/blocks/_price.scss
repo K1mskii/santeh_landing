@@ -12,20 +12,19 @@
     color: $dark;
 }
 .price__list {
+    width: 100%;
     margin-top: 54px;
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 .price__item {
-    flex: 0 0 33.3333%;
+    flex: 0 1 33.3333%;
     max-width: 360px;
     min-height: 652px;
     padding: 35px 49px 0 42px;
     background: $white;
     border-bottom: 5px solid $ocean;
-}
-.price__item:not(:last-child) {
-    margin-right: 30px;
 }
 .price__name {
     max-width: 263px;
@@ -70,6 +69,15 @@
     transition: all .5ms ease;
 }
 
-.price__list .slick-slider {
-    display: block;
+@media screen and (max-width: 1000px) {
+    .price__list {
+        margin-top: 54px;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .price__title {
+        font-size: 25px;
+    }
 }

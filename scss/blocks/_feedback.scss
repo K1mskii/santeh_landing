@@ -114,16 +114,13 @@
     .feedback__title::after {
         display: none;
     }
-    .feedback__wrapper::before {
+    .feedback__wrapper::before, .feedback__wrapper::after {
         display: none;
     }
 }
 @media screen and (max-width: 1000px) {
     .feedback__title::before {
         left: 50%;
-    }
-    .feedback__wrapper::after {
-        display: none;
     }
     .feedback__item:not(:last-child) {
         margin-right: 15px;

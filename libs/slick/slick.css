@@ -91,6 +91,10 @@
 }
 .price__list .slick-slide {
     width: 360px;
+    height: 100%;
+}
+.portfolio__sliders .slick-slide {
+    width: 100%;
 }
 [dir='rtl'] .slick-slide
 {

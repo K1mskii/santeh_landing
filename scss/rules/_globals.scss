@@ -4,13 +4,14 @@ svg path {
     stroke-width:inherit;
 }
 .container {
+    width: 100%;
     max-width: 1440px;
     margin: 0 auto;
     padding: 0 150px;
 }
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1400px) {
     .container {
-        max-width: 1300px;
+        max-width: 1400px;
         margin: 0 auto;
         padding: 0 100px;
     }
